@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>One Page Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <a href="/"><img src="images/logooo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+            <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="course">Course</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenhu()" ></i>
+        </nav>
+<h1>Our Courses</h1>
+    </section>
+    
+    
+    <!-----------Course----->
+    
+ <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Computer Engineering,Computer Organization.</p> 
+        
+        <div class="row">
+            
+            <div class="course-col">
+                <h3>Under Graduate(UG)</h3>
+                <p>Internet of Things<br>
+                <br>
+Data Science<br>
+<br>
+Python Programming<br>
+                <br>
+Programming for Problem Solving</p>
+            </div>
+            <div class="course-col">
+            <h3>Under Graduate(UG)</h3>
+                <p>System Administration<br>
+                <br>
+Cryptography and Network Security<br>
+<br>
+
+Operating System<br>
+                <br>
+Distributed Computing</p>
+                </div>
+            <div class="course-col">
+            <h3>Under Graduate(UG)</h3>
+                <p>Computer Organization and Architecture.<br>
+                <br>Database Management Systems<br>
+                <br>Data Structures and Algorithms<br>
+                </p>
+                </div>
+           
+        </div>
+     <div class="row">
+            
+            <div class="course-col">
+                <h3>Post Graduation(PG)</h3>
+                <p>Grid Computing<br>
+                <br>
+Cloud Computing<br>
+                <br>
+Pervasive Computing<br>
+                <br>
+Evolutionary Computing</p>
+            </div>
+            <div class="course-col">
+            <h3>Post Graduation(PG)</h3>
+                <p>
+                
+Data Warehouse<br>
+                <br>
+Network Security<br>
+                <br>
+Database Security<br>
+                <br>
+Wireless Security</p>
+                </div>
+            <div class="course-col">
+            <h3>Post Graduation(PG)</h3>
+                <p>Digital Image Processing<br>
+                <br>
+Soft Computing<br>
+                <br>
+Applied Medical Image Processing<br>
+                <br>
+Computer Vision</p>
+                </div>
+           
+        </div>
+     <div class="row">
+            
+            <div class="course-col">
+                <h3></h3>
+                <p></p>
+            </div>
+            <div class="course-col">
+            <h3>Doctor Of Philosophy</h3>
+                <p>All Courses Of PG</p>
+                </div>
+            <div class="course-col">
+            <h3></h3>
+                <p></p>
+                </div>
+           
+        </div>
+    </section>
+    
+<!------Facilities------>
+    
+    
+<!---------Footer------------->         
+        
+<section class="footer">
+        <h4>About Us</h4>
+    <p>Various Courses are available for all the students.</p>
+    <div class="icons">
+          <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+       
+    </div>
+    <p>
+    Made by <i class="fa fa-heart-o">Arun</i></p>
+    
+           
+        </section>     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+<!-------JavaScript for Toggle Menu------>   
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+        
+    }
+    
+    
+    </script>    
+</body>
+</html>

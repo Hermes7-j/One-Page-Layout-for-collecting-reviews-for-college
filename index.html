@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    
+    <section class="header" id="1">
+        
+    <nav>
+        <a href="/"><img src="images/logooo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+            <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="course">Course</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenhu()" ></i>
+        </nav>
+<div class="text-box">
+    <h1>One Page Layout</h1>
+    <p>Best place for learning and show off your skills.You 
+        are encouraged to join here and be blessed.
+    </p>
+    <a href="https://www.karunya.edu/cse/" class="hero-btn">Visit Us To Know More</a>
+    
+        </div>
+    </section>
+    <!-----Course------->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Computer Engineering,Computer Organization.</p> 
+        
+        <div class="row">
+            
+            <div class="course-col">
+                <h3>Under Graduate(UG)</h3>
+                <p>B.Tech</p>
+            </div>
+            <div class="course-col">
+            <h3>Post Graduation(PG)</h3>
+                <p>M.Tech</p>
+                </div>
+            <div class="course-col">
+            <h3>PHD</h3>
+                <p>With various specialisations.</p>
+                </div>
+        </div>
+    </section>
+    
+    <!------campus------>
+    
+    <section class="campus" id="3">
+        <h1>Computer science</h1>
+        <div class="row">
+            <div class="two">
+                <div class="layer">
+                    <h3>CS block</h3>
+                </div>
+                <img src="images/csc.png">
+            </div>
+            <div class="two">
+                <div class="layer">
+                    <h3>Computer Technology Centre</h3>
+                </div>
+                <img src="images/ctc2.png">
+            </div>
+            <div class="two">
+                
+                <div class="layer">
+                    <h3>CS Labs</h3>
+                </div>
+                <img src="images/csc4.jpg">
+            </div>
+        </div>
+    </section>
+    
+    <!------Facilities------>
+    <section class="facilities">
+    <h1>Our Facilities</h1>
+        <p>Labs Workshops</p>
+        
+        <div class="row">
+        <div class="facilities-col">
+            <img src="images/lab1.jpg">
+            <h3>Various Projects</h3>
+                <p>Students are trained to do all kinds of Projects.</p>
+            </div>
+             <div class="facilities-col">
+            <img src="images/lab2.jpg">
+            <h3>Labs</h3>
+                <p>Have all machines and PC's for Students.</p>
+            </div>
+                <div class="facilities-col">
+            <img src="images/lab3.jpg">
+            <h3>Coporate Labs</h3>
+                <p>Highly equiped coporate labs for students.</p>
+            </div>
+                </div>
+            </section>
+            
+            <!-------testimonials------>
+            
+            
+<section class="testimonials">
+    <h1>What Our Student Says</h1>
+    <p>Great Opportunities especially for CS students.</p>
+    
+    <div class="row">
+        <div class="testimonial-col">
+        <img src="images/boy.jfif">
+            <div>
+            <p>If you are studious and wanna grab good package , this is a right choice.</p>
+                <h3>Jovan Jacob</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+        <img src="images/user2.jpg">
+            <div>
+            <p>Good infrastructure,There are some great faculties.</p>
+                <h3>
+Sohan Paul</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+    
+</section>
+        
+<!---------call To Action------------->   
+    
+<section class="cta">
+    <h1>Enroll For Our Various Courses.</h1>
+    <a href="" class="hero-btn">Contact Us</a>
+        
+        
+</section>
+    
+<!---------Footer------------->         
+        
+<section class="footer">
+        <h4>About Us</h4>
+    <p>Various Courses are available for all the students.</p>
+    <div class="icons">
+          <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+       
+    </div>
+    <p>
+    Made by <i class="fa fa-heart-o">Arun</i></p>
+    
+           
+        </section>     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+<!-------JavaScript for Toggle Menu------>   
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0"
+        
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+        
+    }
+    
+    
+    </script>    
+</body>
+</html>

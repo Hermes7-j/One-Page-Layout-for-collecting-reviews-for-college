@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>One Page Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <a href="/"><img src="images/logooo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+            <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="course">Course</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenhu()" ></i>
+        </nav>
+<h1>About Us</h1>
+    </section>
+    
+    
+    <!-----------about us content----->
+    
+<section class="about-us">
+        
+    <div class="row">
+        <div class="about-col">
+        <h1>Best University in India.</h1>
+            <p> Skills gained and they are showed off here by our students.</p>
+            <a href="https://www.karunya.edu/cse" class="hero-btn red-btn">Explore Now</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about1.jfif">
+        </div>
+    </div>
+</section>
+   
+    
+<!---------Footer------------->         
+        
+<section class="footer">
+        <h4>About Us</h4>
+    <p>Various Courses are available for all the students.</p>
+    <div class="icons">
+          <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+       
+    </div>
+    <p>
+    Made by <i class="fa fa-heart-o">Arun</i></p>
+    
+           
+        </section>     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+<!-------JavaScript for Toggle Menu------>   
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0"
+        
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+        
+    }
+    
+    
+    </script>    
+</body>
+</html>

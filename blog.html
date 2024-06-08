@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        const addComment = async () =>{
+            var name = document.getElementById('name').value
+            var email = document.getElementById('email').value
+            var comment = document.getElementById('comment').value
+            var data = {
+                name : name,
+                email : email,
+                comment : comment
+            }
+            console.log(data)
+               const response = await fetch('/comment', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+        alert("Comment Added")
+        window.location.reload()
+        }
+    </script>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>One Page Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <a href="/"><img src="images/logooo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+            <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="course">Course</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenhu()" ></i>
+        </nav>
+<h1>Blog </h1>
+    </section>
+    
+    <!--------blog page content---->
+    
+<section class="blog-content">
+    
+    <div class="row">
+        <div class="blog-left">
+        <img src="images/naac.png">
+            <h2>Vision And Mission</h2>
+            <p>To raise world class Computer Science and Engineering professionals excelling in academics, research and providing solutions to human problems. </p>
+            <br>
+            <p>To develop professionals with strong fundamental concepts, programming and problem-solving skills with exposure to emerging technologies.</p>
+            <br>
+            <p>To promote research in the state of art technologies, providing solutions to human problems especially in the area of Health, Water, Energy and Food.
+
+To develop leadership qualities with ethical values to serve the society.
+            
+            <br>
+            <br>
+Considering the significant contributions of Karunya to academic, research, innovation & incubation, extension and outreach activities, NAAC has conferred the highest Grade A++ to Karunya Institute of Technology and Sciences.</p>
+            
+            
+            <div class="comment-box">
+            
+                <h3>Leave a Comment</h3>
+                
+                <div id="myForm" action="" method="">
+                    
+                <input type="text" name="name" id="name" placeholder="Enter Name">
+                <input type="email" name="email" id="email"  placeholder="Enter Email">
+                <textarea rows="5" name="comment" id="comment" placeholder="Your Comment">
+                </textarea> 
+                    <!-- <input type="submit" value="Submit"> -->
+                    <button onclick="addComment()">SUBMIT</button>
+                
+            </div>
+            
+            
+            </div>
+            
+
+            
+        </div>
+        <div class="blog-right">
+            <h3>History</h3>
+            <div>
+                <span>Karunya Institute of Technology</span>
+                <span>1986</span>
+            </div>        
+            <div>
+                <span>Declared as
+Minority Institution</span>
+                <span>1994</span>
+            </div>
+            <div>
+                <span>NBA Accreditation 'A' Grade for four programmes</span>
+                <span>1999</span>
+            </div>
+            <div>
+                <span>First Self-financing
+Autonomous Engineering College</span>
+                <span>1999</span>
+            </div>
+            <div>
+                <span>NAAC Accreditation 'A' Grade</span>
+                <span>2003</span>
+            </div>
+            <div>
+                <span>Declared as
+Deemed to be University</span>
+                <span>2004</span>
+            </div>
+            <div>
+                <span>Establishment of Food Processing R&D Lab</span>
+                <span>2005</span>
+            </div>
+            <div>
+                <span>Establishment of
+Water Institute</span>
+                <span>2008</span>
+            </div>
+            <div>
+                <span>Establishment of Solar & Wind Energy Lab</span>
+                <span>2011</span>
+            </div>
+            <div>
+                <span>NAAC Accreditation
+2.70</span>
+                <span>2014</span>
+            </div>
+            <div>
+                <span>NBA Accreditation for two programmes</span>
+                <span>2015</span>
+            </div>
+            <div>
+                <span>NIRF Ranking
+Engineering Rank : 44
+University Rank : 48</span>
+                <span>2016</span>
+            </div>
+            <div>
+                <span>NIRF Ranking
+Engineering Rank : 62
+University Rank : 74</span>
+                <span>2017</span>
+            </div>
+            <div>
+                <span>NIRF Ranking
+Engineering Rank : 72
+University Rank : 89</span>
+                <span>2018</span>
+            </div>
+            <div>
+                <span>NBA Accreditation for three programmes
+NIRF Ranking
+Engineering Rank : 72
+University Rank : 92</span>
+                <span>2019</span>
+            </div>
+            <div>
+                <span>NAAC Accreditation 'A++' Grade</span>
+                <span>2022</span>
+            </div>
+     </div>
+    
+    
+    
+ </div>
+    
+    
+    
+    
+</section>
+        
+        
+        
+        
+    
+<!---------Footer------------->         
+        
+<section class="footer">
+        <h4>About Us</h4>
+    <p>Various Courses are available for all the students.</p>
+    <div class="icons">
+          <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+       
+    </div>
+    <p>
+    Made by <i class="fa fa-heart-o">Arun</i></p>
+    
+           
+        </section>     
+        
+        
+
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+<!-------JavaScript for Toggle Menu------>   
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0"
+        
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+        
+    }
+    
+    
+    </script>    
+</body>
+</html>
